@@ -1,15 +1,15 @@
 import styled from 'styled-components';
-import DefaultPage from './DefaultPage'
+import Hero from './Hero'
 
-const AppLol = styled.div`
+const PageWrapper = styled.div`
   text-align: center;
 `;
 
 function App() {
     return (
-        <AppLol>
-            <DefaultPage />
-        </AppLol>
+        <PageWrapper>
+            <Hero />
+        </PageWrapper>
     );
 }
 
