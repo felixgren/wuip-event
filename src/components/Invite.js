@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   color: white;
   text-align: center;
   margin-top: 70px;
-  padding: 32px;
+  padding: 32px 32px 64px;
 `;
 
 const Paragraph = styled.p`
@@ -19,7 +19,7 @@ const Paragraph = styled.p`
 const Invite = () => {
   return (
       <Wrapper>
-        <Paragraph fontSize="20px">Hello xxx</Paragraph>
+        <Paragraph fontSize="20px">Hello X!</Paragraph>
         <Paragraph fontSize="16px">Here’s a glimpse at some of the sensational scenery you’ll see.</Paragraph>
         <Paragraph fontSize="12px" mt="24px">You are invited to climb through dozens of colorful stages! Jump, dash, and roll your way through colorful and suprising environments.</Paragraph>
       </Wrapper>

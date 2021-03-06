@@ -34,8 +34,8 @@ const Hero = () => {
         <HeroText>BOWSERS FURY: A JOYFUL CELEBRATION</HeroText>
       </HeroTextWrapper>
       <HeroImage src={heroimg} alt="amazing" />
-      <StyledArrowIcon color="none" w="100%" h="24px" />
-      <StyledArrowIcon color="none" w="100%" h="24px" />
+      <StyledArrowIcon stroke="black" color="none" w="100%" h="24px" />
+      <StyledArrowIcon stroke="black" color="none" w="100%" h="24px" />
     </>
   );
 };
