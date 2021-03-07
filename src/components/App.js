@@ -3,6 +3,8 @@ import Hero from './Hero';
 import Invite from './Invite';
 import SignUp from './SignUp';
 import EvilBowser from './EvilBowser';
+import GameAlbum from './GameAlbum';
+import Footer from './Footer';
 
 const PageWrapper = styled.div`
   text-align: center;
@@ -17,6 +19,8 @@ function App() {
             <Invite />
             <SignUp />
             <EvilBowser />
+            <GameAlbum />
+            <Footer />
         </PageWrapper>
     );
 }

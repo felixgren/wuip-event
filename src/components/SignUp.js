@@ -43,7 +43,7 @@ const SignUp = () => {
   const alt = "Water world";
   return (
     <Wrapper>
-      <PictureCard imgSrc={waterimg} imgAlt={alt} text={text} />
+      <PictureCard fontSize="20px" imgSrc={waterimg} imgAlt={alt} text={text} />
       <ArrowIcon color="#56DDA8" w="100%" h="16px" />
       <ArrowIcon color="#56DDA8" w="100%" h="16px" />
 
