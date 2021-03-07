@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Hero from './Hero';
 import Invite from './Invite';
 import SignUp from './SignUp';
+import EvilBowser from './EvilBowser';
 
 const PageWrapper = styled.div`
   text-align: center;
@@ -15,6 +16,7 @@ function App() {
             <Hero />
             <Invite />
             <SignUp />
+            <EvilBowser />
         </PageWrapper>
     );
 }

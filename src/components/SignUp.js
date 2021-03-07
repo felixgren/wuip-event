@@ -19,7 +19,7 @@ const Input = styled.input`
   width: ${props => props.w ? props.w : '80%'};
   height: 44px;
   margin-top: 12px;
-  background-color: ${props => props.w ? props.color : 'white'};
+  background-color: ${props => props.color ? props.color : 'white'};
   text-align: left;
   border: none;
   border-radius: 4px;
