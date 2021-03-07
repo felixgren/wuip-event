@@ -15,7 +15,7 @@ const Fade = styled.div`
 `;
 
 const CardWrapper = styled.div`
-    margin: 16px;
+    margin: 16px 16px 0;
 `;
 
 const GameAlbum = () => {
