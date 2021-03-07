@@ -2,10 +2,14 @@ import styled from "styled-components";
 import ArrowIcon from "../icons/ArrowIcon";
 import PictureCard from "./PictureCard";
 import waterimg from "../images/water.png";
+import desktop from "../utils/breakpoints";
 
 const Wrapper = styled.div`
   margin-top: 8px;
   padding-bottom: 64px;
+  ${desktop} {
+    width: 50%;
+  }
 `;
 
 const Form = styled.form`
