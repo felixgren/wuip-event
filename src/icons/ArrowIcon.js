@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const ArrowIcon = (props) => (
     <svg viewBox="0 0 40 18" width={props.w} height={props.h} {...props}>

@@ -7,8 +7,8 @@ import GameAlbum from './GameAlbum';
 import Footer from './Footer';
 
 const BackgroundWrapper = styled.div`
-    background: transparent linear-gradient(270deg, #56dda800 0%, #56dda8 100%) 0%
-    0% no-repeat padding-box;
+    background: transparent linear-gradient(270deg, #56dda800 0%, #56dda8 100%)
+        0% 0% no-repeat padding-box;
 `;
 
 const PageWrapper = styled.div`
