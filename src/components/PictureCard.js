@@ -1,7 +1,16 @@
 import styled from "styled-components";
 import desktop from "../utils/breakpoints";
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  ${props => props.flex && `
+      ${desktop} {
+        display: flex;
+        flex-direction: ${props.flex};
+        align-items: center;
+        padding-bottom: 16px;
+      }
+  `};
+`;
 
 const Image = styled.img`
   width: 100%;
@@ -15,15 +24,16 @@ const Paragraph = styled.p`
 
   ${desktop} {
     font-size: 28px;
-    width: 500px;
-    margin: 20% 10%;
+    line-height: 36px;
+    width: ${props => props.flex ? '800px' : '500px'};
+    margin: ${props => props.flex ? '0 70px' : '60px'};
   }
 `;
 
-const PictureCard = ({ imgSrc, imgAlt, text, fontSize, height }) => (
-    <Wrapper>
+const PictureCard = ({ imgSrc, imgAlt, text, fontSize, height, flex }) => (
+    <Wrapper flex={flex}>
       <Image height={height} src={imgSrc} alt={imgAlt} />
-      <Paragraph size={fontSize}>{text}</Paragraph>
+      <Paragraph flex={flex} size={fontSize}>{text}</Paragraph>
     </Wrapper>
 );
 

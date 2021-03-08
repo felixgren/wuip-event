@@ -1,19 +1,17 @@
 import styled from "styled-components";
 import ArrowIcon from "../icons/ArrowIcon";
-import PictureCard from "./PictureCard";
-import waterimg from "../images/water.png";
 import desktop from "../utils/breakpoints";
 
 const Wrapper = styled.div`
-  margin-top: 8px;
   padding-bottom: 64px;
   ${desktop} {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
   }
 `;
 
 const Form = styled.form`
-  margin-top: 30px;
+  margin-top: 30px; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,6 +29,13 @@ const Input = styled.input`
   transition: 0.3s;
   outline: 0px solid #1C547F; 
 
+  ${desktop} {
+    font-size: 31px;
+    height: 50px;
+    margin-top: 16px;
+    width: ${props => props.w ? props.w : '63%'};
+  }
+
   &::placeholder {
     padding: 8px;
   }
@@ -42,20 +47,29 @@ const Input = styled.input`
   }
 `;
 
+const StyledArrowIcon = styled(ArrowIcon)`
+  ${desktop} {
+    width: 44%;
+    height: 42px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+    
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+`;
+
 const SignUp = () => {
-  const text = "Join to get a sneak peek at the action-packed upcoming game.";
-  const alt = "Water world";
   return (
     <Wrapper>
-      <PictureCard fontSize="20px" imgSrc={waterimg} imgAlt={alt} text={text} />
-      <ArrowIcon color="#56DDA8" w="100%" h="16px" />
-      <ArrowIcon color="#56DDA8" w="100%" h="16px" />
-
+      <StyledArrowIcon color="#56DDA8" w="100%" h="16px" />
+      <StyledArrowIcon color="#56DDA8" w="100%" h="16px" />
       <Form action="" method="">
         <Input ariaLabel="Name" type="text" id="name" placeholder="Name" />
         <Input ariaLabel="Phone" type="tel" id="phone" placeholder="Phone" />
         <Input ariaLabel="Email" type="email" id="email" placeholder="Email" />
-        <Input w="100px" color="#FFC901" type="submit" value="Send" />
+        <Input w="120px" color="#FFC901" type="submit" value="Send" />
       </Form>
     </Wrapper>
   );

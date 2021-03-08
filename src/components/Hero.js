@@ -4,6 +4,10 @@ import heroimgDesk from "../images/desktop-hero.png";
 import ArrowIcon from "../icons/ArrowIcon";
 import desktop from "../utils/breakpoints";
 
+const HeroWrapper = styled.div`
+  position: relative;
+`;
+
 const Wrapper = styled.div`
   position: absolute;
   background-color: #ffffff5c;
@@ -53,6 +57,8 @@ const StyledArrowIcon = styled(ArrowIcon)`
   display: block;
 
   ${desktop} {
+    transition: 0.2s;
+
     & > path {
       fill: #56DDA8;
       stroke: transparent;
@@ -62,7 +68,7 @@ const StyledArrowIcon = styled(ArrowIcon)`
 
 const Hero = () => {
   return (
-    <>
+    <HeroWrapper>
       <Wrapper>
         <Paragraph>SUPER MARIO 3D WORLD</Paragraph>
         <Paragraph>+</Paragraph>
@@ -72,7 +78,7 @@ const Hero = () => {
       <HeroImageDesk src={heroimgDesk} alt="amazing" />
       <StyledArrowIcon stroke="black" color="none" w="100%" h="24px" />
       <StyledArrowIcon stroke="black" color="none" w="100%" h="24px" />
-    </>
+    </HeroWrapper>
   );
 };
 

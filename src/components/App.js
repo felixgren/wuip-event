@@ -6,22 +6,29 @@ import EvilBowser from './EvilBowser';
 import GameAlbum from './GameAlbum';
 import Footer from './Footer';
 
+const BackgroundWrapper = styled.div`
+    background: transparent linear-gradient(270deg, #56dda800 0%, #56dda8 100%) 0%
+    0% no-repeat padding-box;
+`;
+
 const PageWrapper = styled.div`
-  text-align: center;
-  background: transparent linear-gradient(270deg, #56dda800 0%, #56dda8 100%) 0%
-  0% no-repeat padding-box;
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
 `;
 
 function App() {
     return (
-        <PageWrapper>
-            <Hero />
-            <Invite />
-            <SignUp />
-            <EvilBowser />
-            <GameAlbum />
-            <Footer />
-        </PageWrapper>
+        <BackgroundWrapper>
+            <PageWrapper>
+                <Hero />
+                <Invite />
+                <SignUp />
+                <EvilBowser />
+                <GameAlbum />
+                <Footer />
+            </PageWrapper>
+        </BackgroundWrapper>
     );
 }
 
