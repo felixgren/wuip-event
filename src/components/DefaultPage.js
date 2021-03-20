@@ -6,6 +6,7 @@ const AppLol = styled.div`
 `;
 
 const AppHeader = styled.header`
+    /* CSS */
     background-color: #282c34;
     min-height: 100vh;
     display: flex;
@@ -13,7 +14,6 @@ const AppHeader = styled.header`
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
 `;
 
 const AppLogo = styled.img`
